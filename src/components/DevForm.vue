@@ -44,7 +44,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'DevForm',
 }
 </script>
 
