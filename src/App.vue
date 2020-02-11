@@ -80,4 +80,11 @@ aside {
   border-radius: 2px;
   padding: 30px 20px;
 }
+
+aside strong {
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  color: #333;
+}
 </style>
