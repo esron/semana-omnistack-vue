@@ -50,4 +50,34 @@ export default {
     width: 100%;
   }
 }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body, #rood {
+  height: 100%;
+}
+
+body {
+  background-color: #E5E6F0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+  font-family: Roboto, sans-serif;
+}
+
+aside {
+  width: 320px;
+  background: #FFF;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
+  border-radius: 2px;
+  padding: 30px 20px;
+}
 </style>
