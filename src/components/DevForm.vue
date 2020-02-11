@@ -10,12 +10,32 @@
     </div>
 
     <div>
-      <label for="github_username">Tecnologias</label>
+      <label for="techs">Tecnologias</label>
       <input
         type="text"
-        id="github_username"
+        id="techs"
         required
       />
+    </div>
+
+    <div>
+      <div>
+        <label for="latitude">Latitude</label>
+        <input
+          type="number"
+          id="latitude"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="latitude">Longitude</label>
+        <input
+          type="number"
+          id="latitude"
+          required
+        />
+      </div>
     </div>
   </form>
 </template>
