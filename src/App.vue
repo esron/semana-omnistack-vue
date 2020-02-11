@@ -22,5 +22,32 @@ export default {
 </script>
 
 <style>
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 30px;
 
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#app main {
+  margin-left: 30px;
+}
+
+@media (max-width: 1000px) {
+  #app {
+    flex-direction: column;
+  }
+
+  #app main {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  #app aside {
+    width: 100%;
+  }
+}
 </style>
