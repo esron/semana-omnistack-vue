@@ -9,7 +9,7 @@
       />
     </div>
 
-    <div>
+    <div class="input-block">
       <label for="techs">Tecnologias</label>
       <input
         type="text"
@@ -18,8 +18,8 @@
       />
     </div>
 
-    <div>
-      <div>
+    <div class="input-group">
+      <div class="input-block">
         <label for="latitude">Latitude</label>
         <input
           type="number"
@@ -28,7 +28,7 @@
         />
       </div>
 
-      <div>
+      <div class="input-block">
         <label for="latitude">Longitude</label>
         <input
           type="number"
@@ -50,13 +50,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-strong {
-  font-size: 20px;
-  text-align: center;
-  display: block;
-  color: #333;
-}
-
 form {
   margin-top: 30px;
 }
