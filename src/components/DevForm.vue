@@ -37,6 +37,8 @@
         />
       </div>
     </div>
+
+    <button type="submit">Salvar</button>
   </form>
 </template>
 
