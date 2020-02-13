@@ -19,6 +19,7 @@
 <script>
 import DevForm from './components/DevForm'
 import DevItem from './components/DevItem'
+import api from './services/api.js'
 
 export default {
   name: 'App',
@@ -33,6 +34,15 @@ export default {
       devs: [],
     }
   },
+
+  mounted() {
+    this.$nextTick(async () => {
+      const response = await api.get('/devs')
+      console.log("TCL: mounted -> response", response)
+
+      this.devs = response.data
+    })
+  }
 }
 </script>
 
