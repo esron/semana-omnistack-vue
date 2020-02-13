@@ -5,13 +5,20 @@
       <dev-form />
     </aside>
     <main>
-
+      <ul>
+        <dev-item
+          v-for="dev of devs"
+          :dev=dev
+          :key=dev.github_username
+        />
+      </ul>
     </main>
   </div>
 </template>
 
 <script>
-import DevForm from './components/DevForm.vue'
+import DevForm from './components/DevForm'
+import DevItem from './components/DevItem'
 
 export default {
   name: 'App',
