@@ -22,8 +22,16 @@ import DevItem from './components/DevItem'
 
 export default {
   name: 'App',
+
   components: {
-    DevForm
+    DevForm,
+    DevItem,
+  },
+
+  data() {
+    return {
+      devs: []
+    }
   }
 }
 </script>
