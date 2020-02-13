@@ -18,7 +18,7 @@
 <script>
 export default {
   props: {
-    dev: () => {},
+    dev: Object,
   },
   name: 'DevItem',
 }
