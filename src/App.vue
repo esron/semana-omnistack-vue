@@ -2,7 +2,7 @@
   <div id="app">
     <aside>
       <strong>Cadastrar</strong>
-      <DevForm />
+      <dev-form />
     </aside>
     <main>
 
