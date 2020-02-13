@@ -30,9 +30,9 @@ export default {
 
   data() {
     return {
-      devs: []
+      devs: [],
     }
-  }
+  },
 }
 </script>
 
