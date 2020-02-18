@@ -5,6 +5,7 @@
       <input
         v-model=github_username
         type="text"
+        name="github_username"
         id="github_username"
         required
       />
@@ -15,6 +16,7 @@
       <input
         v-model=techs
         type="text"
+        name="techs"
         id="techs"
         required
       />
@@ -26,6 +28,7 @@
         <input
           v-model=latitude
           type="number"
+          name="latitude"
           id="latitude"
           required
         />
@@ -36,6 +39,7 @@
         <input
           v-model=longitude
           type="number"
+          name="latitude"
           id="latitude"
           required
         />
