@@ -61,6 +61,23 @@ export default {
       longitude: 0.0,
     }
   },
+
+  mounted() {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords
+
+        this.latitude = latitude
+        this.longitude = longitude
+      },
+      (err) => {
+        console.log(err)
+      },
+      {
+        timeout: 30000
+      }
+    )
+  }
 }
 </script>
 
