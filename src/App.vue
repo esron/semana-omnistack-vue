@@ -2,7 +2,7 @@
   <div id="app">
     <aside>
       <strong>Cadastrar</strong>
-      <dev-form />
+      <dev-form @submit=handleAddDev />
     </aside>
     <main>
       <ul>
@@ -38,10 +38,17 @@ export default {
   mounted() {
     this.$nextTick(async () => {
       const response = await api.get('/devs')
-      console.log("TCL: mounted -> response", response)
 
       this.devs = response.data
     })
+  },
+
+  methods: {
+    async handleAddDev(data) {
+      const response = await api.post('/devs', data)
+
+      this.devs = [...this.devs, response.data]
+    }
   }
 }
 </script>
