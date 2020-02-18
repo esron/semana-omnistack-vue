@@ -3,6 +3,7 @@
     <div class="input-block">
       <label for="github_username">Usuário do Github</label>
       <input
+        v-model=github_username
         type="text"
         id="github_username"
         required
@@ -12,6 +13,7 @@
     <div class="input-block">
       <label for="techs">Tecnologias</label>
       <input
+        v-model=techs
         type="text"
         id="techs"
         required
@@ -22,6 +24,7 @@
       <div class="input-block">
         <label for="latitude">Latitude</label>
         <input
+          v-model=latitude
           type="number"
           id="latitude"
           required
@@ -31,6 +34,7 @@
       <div class="input-block">
         <label for="latitude">Longitude</label>
         <input
+          v-model=longitude
           type="number"
           id="latitude"
           required
