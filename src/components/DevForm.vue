@@ -45,6 +45,14 @@
 <script>
 export default {
   name: 'DevForm',
+  data() {
+    return {
+      github_username: '',
+      techs: '',
+      latitude: 0.0,
+      longitude: 0.0,
+    }
+  },
 }
 </script>
 
