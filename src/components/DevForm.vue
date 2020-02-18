@@ -1,5 +1,5 @@
 <template>
-  <form>
+  <form @submit.prevent=handleSubmit>
     <div class="input-block">
       <label for="github_username">Usuário do Github</label>
       <input
@@ -30,6 +30,7 @@
           type="number"
           name="latitude"
           id="latitude"
+          step="any"
           required
         />
       </div>
@@ -41,6 +42,7 @@
           type="number"
           name="latitude"
           id="latitude"
+          step="any"
           required
         />
       </div>
@@ -77,6 +79,15 @@ export default {
         timeout: 30000
       }
     )
+  },
+
+  methods: {
+    handleSubmit() {
+      // Emitir evento submit
+
+      this.github_username = ''
+      this.techs = ''
+    }
   }
 }
 </script>
