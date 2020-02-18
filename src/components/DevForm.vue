@@ -83,7 +83,12 @@ export default {
 
   methods: {
     handleSubmit() {
-      // Emitir evento submit
+      this.$emit('submit', {
+        github_username: this.github_username,
+        techs: this.techs,
+        latitude: this.latitude,
+        longitude: this.longitude,
+      })
 
       this.github_username = ''
       this.techs = ''
